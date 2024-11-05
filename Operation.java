@@ -1,0 +1,22 @@
+public abstract class Operation extends Expression {
+    private Expression operande1;
+    private Expression operande2;
+
+    public Operation(Expression op1, Expression op2) { //
+        this.operande1 = op1;
+        this.operande2 = op2;
+    }
+
+    public abstract double valeur();
+    public abstract String toString();
+
+    public Expression getOperande1() {
+        return operande1;
+    }
+
+    public Expression getOperande2() {
+        return operande2;
+    }
+}
+
+
