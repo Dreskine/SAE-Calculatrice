@@ -23,12 +23,10 @@ public class CalculatriceSimple {
             System.out.println(divisionParZero + " = " + divisionParZero.valeur()); // doit lancer une exception
 
         } 
-        catch (ArithmeticException e) 
+      catch(InputMismatchException e)
         {
-            System.out.println("Erreur arithmétique : " + e);
-        } 
-        
-        
-        
+            System.out.println("la valeur entre n'est pas la bonne 
+            veuillez en entrez une nouvelle");
+        }
     }
 }
